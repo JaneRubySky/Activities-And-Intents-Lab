@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.janerubygrissom.madlibs.MainActivity">
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mad Libbin' "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edittext_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Adjective" />
+
+    <EditText
+        android:id="@+id/edittext_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adjective" />
+
+    <EditText
+        android:id="@+id/edittext_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Noun" />
+
+    <EditText
+        android:id="@+id/edittext_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Noun" />
+
+    <EditText
+        android:id="@+id/edittext_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Animal" />
+
+    <EditText
+        android:id="@+id/edittext_six"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Game" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="SUBMIT" />
+
+<!--<ImageView-->
+    <!--android:id="@+id/heart"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--/>-->
+
+</LinearLayout>
+
