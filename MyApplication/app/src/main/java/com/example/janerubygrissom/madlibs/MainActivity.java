@@ -1,6 +1,7 @@
 package com.example.janerubygrissom.madlibs;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -8,6 +9,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -48,7 +50,10 @@ public class MainActivity extends AppCompatActivity {
         for (EditText anotherEditText : editText) {
             editTextListener(anotherEditText);
         }
-        Button submit = (Button) findViewById(R.id.submit);
+        //Button submit = (Button) findViewById(R.id.submit);
+        ImageView submit = (ImageView) findViewById(R.id.heart);
+        Drawable drawable = getResources().getDrawable(R.drawable.heart);
+        submit.setImageDrawable(drawable);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,14 +63,14 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra("adjectiveTwo", adjectiveTwo.getText().toString());
                     intent.putExtra("nounOne", nounOne.getText().toString());
                     intent.putExtra("nounTwo", nounTwo.getText().toString());
-                    intent.putExtra("animals", animal.getText().toString());
+                    intent.putExtra("animal", animal.getText().toString());
                     intent.putExtra("game", game.getText().toString());
                     startActivity(intent);
                 }
             }
         });
     }
-    
+
 
     public void editTextListener(final EditText editText) {
         editText.addTextChangedListener(new TextWatcher() {

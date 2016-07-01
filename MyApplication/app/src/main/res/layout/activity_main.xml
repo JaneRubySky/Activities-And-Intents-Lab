@@ -8,66 +8,83 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.janerubygrissom.madlibs.MainActivity">
+    tools:context="com.example.janerubygrissom.madlibs.MainActivity"
+    android:background="#BDBDBD">
 
     <TextView
         android:id="@+id/information"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mad Libbin' "
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
 
     <EditText
         android:id="@+id/edittext_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="Adjective" />
+        android:hint="Adjective"
+        android:textColor="#00897B"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/edittext_two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Adjective" />
+        android:hint="Adjective"
+        android:textColor="#00897B"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/edittext_three"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Noun" />
+        android:hint="Noun"
+        android:textColor="#00897B"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/edittext_four"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Noun" />
+        android:hint="Noun"
+        android:textColor="#00897B"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/edittext_five"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Animal" />
+        android:hint="Animal"
+    android:textColor="#00897B"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/edittext_six"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Game" />
+        android:hint="Game"
+        android:textColor="#00897B"
+        android:textStyle="bold"/>
 
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:text="SUBMIT" />
+    <!--<Button-->
+        <!--android:id="@+id/submit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:text="SUBMIT" />-->
 
-<!--<ImageView-->
-    <!--android:id="@+id/heart"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--/>-->
+<ImageView
+    android:id="@+id/heart"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxWidth="0.5dp"
+    android:maxHeight="0.5dp"
+    android:layout_margin=".3dp"
+    />
 
 </LinearLayout>
 

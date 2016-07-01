@@ -33,11 +33,16 @@ public class Main2Activity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Main2Activity.this, MainActivity.class);
                 startActivity(intent);
+
+                Intent goBack = new Intent(view.getContext(), MainActivity.class);
+                             startActivity(goBack);
             }
+
         });
         madLibText = (TextView) findViewById(R.id.textview_madlib);
-        madLibText.setText("_______ " + adjectiveOne + " _____________ " +
-                adjectiveTwo + "______________ " + nounOne + "_________________ " + nounTwo + "_______________" +
-                "_______________" + animal + "________________" + game + ".");
+        madLibText.setText("A vacation is when you take a trip to some " + "[" + adjectiveOne + "]" + " place with your " + "[" +
+                adjectiveTwo + "]" + " family. Usually you go to some place that is near a " + "[" + nounOne + "]" + " or up on a " + "[" + nounTwo + "]" + ". A good vacation place is one " +
+                "where you can ride a " + "[" + animal + "]" + " or play " + "[" + game + "]" + ".");
     }
+
 }
